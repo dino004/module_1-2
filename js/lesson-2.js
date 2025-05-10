@@ -218,3 +218,5 @@ function calcTotalPrice(array, fruitName) {
 }
 
 console.log(calcTotalPrice(fruits, "Banana"));
+
+
