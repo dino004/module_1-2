@@ -1,15 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Базові операції з DOM</h1>
+      <ul class="list">
+        <li data-topic="navigation">
+          <h3>Навігація по DOM</h3>
+          <p>
+            Доступ до DOM починається з об'єкта document, з нього можна
+            дістатися до будь-яких елементів
+          </p>
+        </li>
+        <li data-topic="search">
+          <h3 class="completed">Властивості та атрибути</h3>
+          <p>
+            elem.textContent, elem.classList, elem.style,
+            elem.hasAttribute(name), elem.getAttribute(name),
+            elem.setAttribute(name, value), elem.removeAttribute(name)
+          </p>
+        </li>
+        <li data-topic="manipulation">
+          <h3>Створення та видалення елементів</h3>
+          <p>
+            DOM API дозволяє не тільки вибирати або змінювати вже існуючі, але й
+            видалятиб а також створювати нові елементи, після чого додавати їх в
+            документ.
+          </p>
+        </li>
+      </ul>
+
+      <!-- Form HTML -->
+      <form class="contact-form js-contact-form">
+        <input
+          name="userName"
+          type="text"
+          class="contact-form-input js-username-input"
+          data-length="8"
+          placeholder="Your name"
+        />
+        <label class="js-policy-label">
+          <input
+            type="checkbox"
+            name="accept"
+            class="contact-form-checkbox js-policy-checkbox"
+          />
+          <span class="js-username-output">Anonymous</span>
+        </label>
+        <button type="submit" class="contact-form-btn js-contact-form- submit">
+          Відправити
+        </button>
+      </form>
+      <!-- Accordion HTML -->
+      <ul class="accordion-list list js-accordion-list">
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 1</button>
+          <div class="panel js-panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing Inventore,
+              labore deleniti ullam esse consequatur voluptatem veritatis,
+              mollitia voluptas voluptatibus quia eveniet veniam, doloribus
+              elit. eaque corrupti id iste! Consequuntur temporibus assumenda!
+            </p>
+          </div>
+        </li>
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 2</button>
+          <div class="panel js-panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing Inventore,
+              labore deleniti ullam esse consequatur veritatis, mollitia
+              voluptas voluptatibus quia eveniet voluptatem veniam, eaque
+              corrupti id iste! Consequuntur temporibus doloribus assumenda!
+            </p>
+          </div>
+        </li>
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 3</button>
+          <div class="panel js-panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing Inventore,
+              labore deleniti ullam esse consequatur voluptatem veritatis,
+              mollitia voluptas voluptatibus quia eveniet veniam, doloribus
+              eaque corrupti id iste! Consequuntur temporibus assumenda!
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <!-- <script type="module" src="./js/lesson-1.js"></script> -->
     <!-- <script type="module" src="./js/lesson-2.js"></script> -->
-    <script type="module" src="./js/lesson-3.js"></script>
-</body>
+    <!-- <script type="module" src="./js/lesson-3.js"></script> -->
+    <script type="module" src="./js/lesson-4.js"></script>
+  </body>
 </html>
